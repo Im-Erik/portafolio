@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi Portafolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="dark-mode">
+  <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top">
+    <div class="container">
+      <button class="navbar-toggler order-2 order-md-1" type="button" data-bs-toggle="collapse"
+        data-bs-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse order-3 order-md-2" id="navbar-left">
+        <ul class="navbar-nav me-auto nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#acerca">Acerca de mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="navbar-brand order-1 order-md-3" href="#home">
+        <img src="assets/img/pluma.png"
+          style="background-color: #FFC107; padding: 10px; border: 2px solid #FFC107; border-radius: 50%;"
+          alt="logo-home" />
+      </a>
+
+      <div class="collapse navbar-collapse order-4 order-md-4" id="navbar-right">
+        <ul class="navbar-nav ms-auto nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#resumen">Resumen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#habilidades">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-0" href="#contacto">Contacto</a>
+          </li>
+          <li class="nav-item ms-0 ms-md-3 me-0 mt-3 mt-md-0">
+            <button id="darkModeToggle" class="btn btn-outline-secondary btn-mode">
+              <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-moon-fill" viewBox="0 0 16 16" style="display: none;">
+                <path
+                  d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+              </svg>
+              <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-sun-fill" viewBox="0 0 16 16">
+                <path d="M8 3a5 5 0 1 1 0 10A5 5 0 0 1 8 3z" />
+                <path
+                  d="M8 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 8 0zm0 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5zm8-7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1 0-1h1a.5.5 0 0 1 .5.5zm-14 0a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1 0-1h1a.5.5 0 0 1 .5.5z" />
+              </svg>
+            </button>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section id="home" class="container my-5 d-flex align-items-center">
+    <div class="row">
+      <div class="col-md-6" style="margin-top: 100px;">
+        <h2 class="mt-5 large-text">Hola! soy</h2>
+        <span class="large-text">Erik Orrego</span>
+        <h3 class="text-warning">Desarrollador Frontend</h3>
+        <p>
+          Soy desarrollador Front End, me apasiona diseñar interfaces que combinen de la mejor manera fuentes, colores,
+          formas, tamaños y estilos
+        </p>
+        <button class="btn btn-secondary mt-4">Mira acá ...</button>
+      </div>
+      <div class="col-md-6">
+        <img src="assets/img/photo-perfil.jpg" class="img-fluid rounded" alt="imagen de perfil contenida en el home" />
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2 container" tabindex="0">
+      <h4 id="acerca" class="text-warning" style="margin-top: 100px;">Acerca de mi</h4>
+
+      <p>
+        Técnico en programación computacional, amante del diseño y las
+        interfaces web, la aplicación correcta de los colores y las fuentes.
+        Soy un desarrollador frontend apasionado y comprometido. Mis conocimientos en HTML, CSS, JavaScript y
+        Bootstrap, me permiten estructurar y diseñar
+        interfaces responsivas, intuitivas y atractivas.
+      </p>
+
+      <h4 id="proyectos" class="text-warning" style="margin-top: 100px;">Proyectos</h4>
+      <p class="mb-5">
+        Una muestra de mis proyectos y habilidades
+      </p>
+
+      <div class="row row-cols-1 row-cols-md-3 g-5 gy-4">
+        <div class="col">
+          <div class="card card-skills" style="padding:30px">
+            <img src="./assets/img/imagen-portafolio.jpeg" class="card-img-top"
+              alt="imagen referencial proyecto portafolio" />
+            <div class="card-body">
+              <h5 class="card-title d-flex justify-content-between">
+                Portafolio
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                  </svg></span>
+              </h5>
+
+              <p class="card-text">
+                Portafolio profesional, muestra de mis habilidades y gustos.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary">Proyecto personal</small>
+              </p>
+
+              <button class="btn btn-warning custom-spacing">HTML</button>
+              <button class="btn btn-primary custom-spacing">CSS</button>
+              <button class="btn btn-danger custom-spacing">JS</button>
+              <button class="btn btn-success custom-spacing">BOOTSTRAP</button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-skills" style="padding:30px">
+            <img src="./assets/img/imagen-retencion.jpg" class="card-img-top"
+              alt="imagen referencial proyecto retencion judicial" />
+            <div class="card-body">
+              <h5 class="card-title d-flex justify-content-between">
+                Retencion Judicial
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                  </svg></span>
+              </h5>
+
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary">Proyecto para el gobierno</small>
+              </p>
+              <button class="btn btn-danger custom-spacing">ANGULAR</button>
+              <button class="btn btn-warning custom-spacing">HTML</button>
+              <button class="btn btn-primary custom-spacing">CSS</button>
+              <button class="btn btn-danger custom-spacing">JS</button>
+              <button class="btn btn-success custom-spacing">BOOTSTRAP</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-skills" style="padding:30px">
+            <img src="./assets/img/imagen-expediente.jpg" class="card-img-top"
+              alt="imagen referencial proyecto expediente electronico" />
+            <div class="card-body">
+              <h5 class="card-title d-flex justify-content-between">
+                Expediente electrónico
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                  </svg></span>
+              </h5>
+
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary">Proyecto para el gobierno</small>
+              </p>
+
+              <button class="btn btn-warning custom-spacing">JS</button>
+              <button class="btn btn-primary custom-spacing">Angular</button>
+              <button class="btn btn-danger custom-spacing">Laravel</button>
+              <button class="btn btn-danger custom-spacing">HTML</button>
+              <button class="btn btn-success custom-spacing">BOOTSTRAP</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-skills" style="padding:30px">
+            <img src="./assets/img/work.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title d-flex justify-content-between">
+                Biblioteca
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                  </svg></span>
+              </h5>
+
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </p>
+
+              <button class="btn btn-warning custom-spacing">JS</button>
+              <button class="btn btn-primary custom-spacing">Angular</button>
+              <button class="btn btn-danger custom-spacing">Laravel</button>
+              <button class="btn btn-danger custom-spacing">HTML</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-skills" style="padding:30px">
+            <img src="./assets/img/work.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title d-flex justify-content-between">
+                Biblioteca
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                  </svg></span>
+              </h5>
+
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </p>
+
+              <button class="btn btn-warning custom-spacing">JS</button>
+              <button class="btn btn-primary custom-spacing">Angular</button>
+              <button class="btn btn-danger custom-spacing">Laravel</button>
+              <button class="btn btn-danger custom-spacing">HTML</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-skills" style="padding:30px">
+            <img src="./assets/img/work.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title d-flex justify-content-between">
+                Biblioteca
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                  </svg></span>
+              </h5>
+
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </p>
+
+              <button class="btn btn-warning custom-spacing">JS</button>
+              <button class="btn btn-primary custom-spacing">Angular</button>
+              <button class="btn btn-danger custom-spacing">Laravel</button>
+              <button class="btn btn-danger custom-spacing">HTML</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <h4 id="resumen" class="text-warning" style="margin-top: 100px;">Resumen profesional</h4>
+      <p>
+        Soy un desarrollador web apasionado por crear experiencias web atractivas, responsivas y funcionales. Con la
+        experiencia que tengo logro transformar ideas y propuestas en interfaces modernas y efectivas. Mi objetivo es
+        aportar soluciones innovadoras y a la vez seguir perfeccionando mis habilidades en el desarrollo web. En el
+        backend tengo conocimientos en Laravel y base de datos, lo que me permite colaborar en equipos
+        multidisciplinarios.
+      </p>
+
+      <h4 id="habilidades" class="text-warning" style="margin-top: 100px;">Habilidades</h4>
+      <p>
+        He adquirido una base solida a través de proyectos recientes y aprendizaje continuo, mis habilidades son las
+        siguientes :
+      </p>
+
+      <div class="card text-center mt-4">
+        <div class="card-body">
+          <div class="skill row text-center gy-3">
+
+            <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+              <img src="./assets/img/skills/angular.png" class="img-fluid" alt="Angular" width="40" />
+              <span>Angular</span>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+              <img src="./assets/img/skills/html5.png" class="img-fluid" alt="HTML5" width="40" />
+              <span>HTML</span>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+              <img src="./assets/img/skills/css-3.png" class="img-fluid" alt="CSS3" width="40" />
+              <span>CSS</span>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+              <img src="./assets/img/skills/js.png" class="img-fluid" alt="JavaScript" width="40" />
+              <span>JavaScript</span>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+              <img src="./assets/img/skills/bootstrap.png" class="img-fluid" alt="Bootstrap" width="40" />
+              <span>Bootstrap</span>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+              <img src="./assets/img/skills/typescript.png" class="img-fluid" alt="TypeScript" width="40" />
+              <span>TypeScript</span>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+              <img src="./assets/img/skills/mysql.png" class="img-fluid" alt="MySQL" width="40" />
+              <span>MySQL</span>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+              <img src="./assets/img/skills/laravel.png" class="img-fluid" alt="Laravel" width="40" />
+              <span>Laravel</span>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+              <img src="./assets/img/skills/figma.png" class="img-fluid" alt="Figma" width="40" />
+              <span>Figma</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <h4 id="contacto" class="text-warning" style="margin-top: 100px;">Contacto</h4>
+      <p>
+        Responderé a tu mensaje en cuanto pueda.
+
+      </p>
+
+      <div class="container mb-5 mt-4">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4 me-5">
+              <h1><span class="text-warning">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                    class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                  </svg>
+                </span></h1>
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <form action="https://formspree.io/f/xjkvawke" method="POST">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Escriba su direccion de correo</label>
+                    <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
+                      placeholder="nombre@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Escriba su mensaje</label>
+                    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </form>
+                <p class="card-text">
+                <div class="mb-3">
+                 <button class="btn btn-primary" type="submit">Enviar</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- Agregado de desplazamiento suave -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        window.scrollTo({
+          top: targetElement.offsetTop - 100, // Ajuste para el navbar fijo
+          behavior: "smooth",
+        });
+      });
+    });
+  </script>
+  <script src="script/script.js"></script>
+</body>
+
+</html>
