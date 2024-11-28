@@ -358,6 +358,7 @@
         </div>
       </div>
 
+      <h4 id="contacto" class="text-warning" style="margin-top: 100px;">Contacto</h4>
       <div class="mb-5 mt-4 imgcontacto">
         <div class="card formcontacto">
           <div class="row g-0">
@@ -365,20 +366,24 @@
             </div>
             <div class="col-md-7">
               <div class="card-body">
-                <h4 id="contacto" class="text-warning" style="margin-top: 100px;">Contacto</h4>
-                <p class="fst-italic">Italic text.</p>
+               
+                <p class="fst-italic mb-5">"El primer paso hacia algo increible es decir '¡Hola!'</p>
+                
                 <form action="https://formspree.io/f/xjkvawke" method="POST">
                   <div class="mb-3">
                     <!-- <label for="exampleFormControlInput1" class="form-label">Escriba su direccion de correo</label> -->
                     <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
-                      placeholder="Email">
+                      placeholder="Email" autocomplete="off" required>
                   </div>
                   <div class="mb-3">
                     <!-- <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label> -->
-                    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje" maxlength="250"></textarea>
+                    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje" autocomplete="off"  maxlength="250" required>                      
+                    </textarea>
                   </div>
                   <button class="btn btn-primary" type="submit">Enviar</button>
                 </form>
+
+                </div>
               </div>
             </div>
           </div>
@@ -407,6 +412,12 @@
         });
       });
     });
+
+
+    window.onload = () => {
+    document.querySelector('textarea[name="message"]').value = '';
+  };
+  
   </script>
   <script src="script/script.js"></script>
 </body>
