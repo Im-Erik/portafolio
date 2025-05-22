@@ -11,7 +11,7 @@ Bootstrap
 
 *** Características
 Página responsiva y moderna
-Modo claro y oscuro activado automaticamente según preferencias del sistema
+Disponible boton modo claro u oscuro
 Con enlace a la codificación de los proyectos
 Sección de contacto integrada
 Uso de buenas practicas
