@@ -25,7 +25,7 @@
       <div class="collapse navbar-collapse order-3 order-md-2" id="navbar-left">
         <ul class="navbar-nav me-auto nav-pills">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#acerca">Acerca de mi</a>
@@ -54,7 +54,7 @@
             <a class="nav-link me-0" href="#contacto">Contacto</a>
           </li>
           <li class="nav-item ms-0 ms-md-3 me-0 mt-3 mt-md-0">
-            <button id="darkModeToggle" class="btn btn-outline-secondary btn-mode">
+            <button id="darkModeToggle" class="btn btn-outline-secondary btn-mode" title="boton modo dark modo light">
               <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-moon-fill" viewBox="0 0 16 16" style="display: none;">
                 <path
@@ -83,8 +83,8 @@
         <h3 class="text-warning">Desarrollador Frontend</h3>
         <p>
           Soy desarrollador Front End, me apasiona diseñar interfaces que combinen de la mejor manera fuentes, colores,
-          formas, tamaños y estilos
-        </p>   
+          formas, tamaños y estilos, consumir la data y poner esta información al servicio de mis usuarios y clientes.
+        </p>
       </div>
       <div class="col-md-6">
         <img src="assets/img/photo-perfil.jpg" class="img-fluid rounded" alt="imagen de perfil contenida en el home" />
@@ -99,19 +99,17 @@
       <h4 id="acerca" class="text-warning" style="margin-top: 100px;">Acerca de mi</h4>
 
       <p>
-        Técnico en programación computacional, amante del diseño y las
-        interfaces web, la aplicación correcta de los colores y las fuentes.
-        Soy un desarrollador frontend apasionado y comprometido. Mis conocimientos en HTML, CSS, JavaScript y
-        Bootstrap, me permiten estructurar y diseñar
+        Soy amante del diseño, las interfaces web, la aplicación correcta de los colores y estilos.
+        Mis conocimientos en HTML, CSS, JavaScript, Bootstrap y otras tecnologías, me permiten estructurar y diseñar
         interfaces responsivas, intuitivas y atractivas.
       </p>
 
       <h4 id="proyectos" class="text-warning" style="margin-top: 100px;">Proyectos</h4>
       <p class="mb-5">
-        Una muestra de mis proyectos y habilidades
       </p>
 
       <div class="row row-cols-1 row-cols-md-3 g-5 gy-4">
+        <!--Card  Portafolio-->
         <div class="col">
           <div class="card card-skills" style="padding:30px">
             <img src="./assets/img/imagen-portafolio.jpeg" class="card-img-top"
@@ -119,196 +117,182 @@
             <div class="card-body">
               <h5 class="card-title d-flex justify-content-between">
                 Portafolio
-                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-github" viewBox="0 0 16 16">
-                    <path
-                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                  </svg></span>
+                <a href="https://github.com/Im-Erik/portafolio" target="_blank" rel="noopener"
+                  title="ver codigo fuente en GitHub" aria-label="ver codigo fuente en GitHub">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-github" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg></span>
+                </a>
               </h5>
 
               <p class="card-text">
-                Portafolio profesional, muestra de mis habilidades y gustos.
+                Portafolio profesional, muestra de mis proyectos y habilidades.
               </p>
               <p class="card-text">
                 <small class="text-body-secondary">Proyecto personal</small>
               </p>
-
-              <button class="btn btn-warning custom-spacing">HTML</button>
-              <button class="btn btn-primary custom-spacing">CSS</button>
-              <button class="btn btn-danger custom-spacing">JS</button>
-              <button class="btn btn-success custom-spacing">BOOTSTRAP</button>
-
+              <span class="badge text-bg-warning">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-danger">JS</span>
+              <span class="badge text-bg-success">BOOTSTRAP</span>
             </div>
           </div>
         </div>
+        <!--Fin Card Portafolio-->
 
+        <!--Card Retención Judicial-->
         <div class="col">
           <div class="card card-skills" style="padding:30px">
-            <img src="./assets/img/imagen-retencion.jpg" class="card-img-top"
-              alt="imagen referencial proyecto retencion judicial" />
+            <img src="./assets/img/RJ.jpeg" class="card-img-top" alt="imagen referencial proyecto retencion judicial"
+              data-bs-toggle="modal" data-bs-target="#modal-rj" style="cursor: pointer;" />
+
             <div class="card-body">
               <h5 class="card-title d-flex justify-content-between">
                 Retencion Judicial
-                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-github" viewBox="0 0 16 16">
-                    <path
-                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                  </svg></span>
+                <a href="https://github.com/tu-usuario/tu-repositorio" target="_blank" rel="noopener"
+                  title="ver codigo fuente en GitHub" aria-label="ver codigo fuente en GitHub">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-github" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg></span>
+                </a>
               </h5>
 
               <p class="card-text">
-                Proyecto sistema de retencion judicial para cliente Estado de Chile
+                Proyecto sistema de retencion judicial para cliente Instituto de Previsión Social (IPS) del Estado de
+                Chile.
               </p>
               <p class="card-text">
-                <small class="text-body-secondary">Proyecto para el gobierno</small>
+                <small class="text-body-secondary">Proyecto para el Instituto de Previsión Social</small>
               </p>
-              <button class="btn btn-danger custom-spacing">ANGULAR</button>
-              <button class="btn btn-warning custom-spacing">HTML</button>
-              <button class="btn btn-primary custom-spacing">CSS</button>
-              <button class="btn btn-danger custom-spacing">JS</button>
-              <button class="btn btn-success custom-spacing">BOOTSTRAP</button>
+              <span class="badge text-bg-danger">Angular</span>
+              <span class="badge text-bg-warning">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-danger">JS</span>
+              <span class="badge text-bg-success">BOOTSTRAP</span>
             </div>
           </div>
         </div>
+        <!--Fin Card Retencion Judicial-->
 
+        <!--Card Expediente electronico-->
         <div class="col">
           <div class="card card-skills" style="padding:30px">
-            <img src="./assets/img/imagen-expediente.jpg" class="card-img-top"
-              alt="imagen referencial proyecto expediente electronico" />
+            <img src="./assets/img/EE.png" class="card-img-top"
+              alt="imagen referencial proyecto expediente elecrtrónico" data-bs-toggle="modal"
+              data-bs-target="#modal-ee" style="cursor: pointer;" />
             <div class="card-body">
               <h5 class="card-title d-flex justify-content-between">
                 Expediente electrónico
-                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-github" viewBox="0 0 16 16">
-                    <path
-                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                  </svg></span>
+                <a href="https://github.com/tu-usuario/tu-repositorio" target="_blank" rel="noopener"
+                  title="ver codigo fuente en GitHub" aria-label="ver codigo fuente en GitHub">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-github" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg></span>
+                </a>
               </h5>
 
               <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Sistema de expediente electrónico para el Intituto de Previsión Social (IPS) del Estado de Chile.
               </p>
               <p class="card-text">
-                <small class="text-body-secondary">Proyecto para el gobierno</small>
+                <small class="text-body-secondary">Proyecto para el Instituto de Previsión Social</small>
               </p>
-
-              <button class="btn btn-warning custom-spacing">JS</button>
-              <button class="btn btn-primary custom-spacing">Angular</button>
-              <button class="btn btn-danger custom-spacing">Laravel</button>
-              <button class="btn btn-danger custom-spacing">HTML</button>
-              <button class="btn btn-success custom-spacing">BOOTSTRAP</button>
+              <span class="badge text-bg-danger">Angular</span>
+              <span class="badge text-bg-warning">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-danger">JS</span>
+              <span class="badge text-bg-success">BOOTSTRAP</span>
             </div>
           </div>
         </div>
+        <!--Fin Card Expediente Electronico-->
 
+        <!--Card StickCode-->
         <div class="col">
           <div class="card card-skills" style="padding:30px">
-            <img src="./assets/img/work.jpeg" class="card-img-top" alt="..." />
+            <img src="./assets/img//stickcode.png" class="card-img-top" alt="imagen referencial proyecto stickcode"
+              data-bs-toggle="modal" data-bs-target="#modal-stickcode" style="cursor: pointer;" />
             <div class="card-body">
               <h5 class="card-title d-flex justify-content-between">
-                Biblioteca
-                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-github" viewBox="0 0 16 16">
-                    <path
-                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                  </svg></span>
+                StickCode
+                <a href="https://github.com/tu-usuario/tu-repositorio" target="_blank" rel="noopener"
+                  title="ver codigo fuente en GitHub" aria-label="ver codigo fuente en GitHub">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-github" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg></span>
+                </a>
               </h5>
 
               <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Página web para Empresa Desarrolladora de Software
               </p>
               <p class="card-text">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                <small class="text-body-secondary">Página para startup</small>
               </p>
-
-              <button class="btn btn-warning custom-spacing">JS</button>
-              <button class="btn btn-primary custom-spacing">Angular</button>
-              <button class="btn btn-danger custom-spacing">Laravel</button>
-              <button class="btn btn-danger custom-spacing">HTML</button>
+              <span class="badge text-bg-warning">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-danger">JS</span>
+              <span class="badge text-bg-success">BOOTSTRAP</span>
             </div>
           </div>
         </div>
+        <!--Fin Card StickCode-->
 
+        <!--Card work-->
         <div class="col">
           <div class="card card-skills" style="padding:30px">
-            <img src="./assets/img/work.jpeg" class="card-img-top" alt="..." />
+            <img src="./assets/img/work.jpeg" class="card-img-top" alt="imagen referencial proyecto stickcode"
+              data-bs-toggle="modal" data-bs-target="#modal-stickcode" style="cursor: pointer;" />
             <div class="card-body">
               <h5 class="card-title d-flex justify-content-between">
-                Biblioteca
-                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-github" viewBox="0 0 16 16">
-                    <path
-                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                  </svg></span>
+                StickCode
+                <a href="https://github.com/tu-usuario/tu-repositorio" target="_blank" rel="noopener"
+                  title="ver codigo fuente en GitHub" aria-label="ver codigo fuente en GitHub">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-github" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg></span>
+                </a>
               </h5>
 
               <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Página web para Empresa
               </p>
               <p class="card-text">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                <small class="text-body-secondary">Proyecto</small>
               </p>
-
-              <button class="btn btn-warning custom-spacing">JS</button>
-              <button class="btn btn-primary custom-spacing">Angular</button>
-              <button class="btn btn-danger custom-spacing">Laravel</button>
-              <button class="btn btn-danger custom-spacing">HTML</button>
+              <span class="badge text-bg-warning">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-danger">JS</span>
+              <span class="badge text-bg-success">BOOTSTRAP</span>
             </div>
           </div>
         </div>
-
-        <div class="col">
-          <div class="card card-skills" style="padding:30px">
-            <img src="./assets/img/work.jpeg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title d-flex justify-content-between">
-                Biblioteca
-                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-github" viewBox="0 0 16 16">
-                    <path
-                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                  </svg></span>
-              </h5>
-
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
-              </p>
-
-              <button class="btn btn-warning custom-spacing">JS</button>
-              <button class="btn btn-primary custom-spacing">Angular</button>
-              <button class="btn btn-danger custom-spacing">Laravel</button>
-              <button class="btn btn-danger custom-spacing">HTML</button>
-            </div>
-          </div>
-        </div>
-
+        <!--Fin Card work-->
       </div>
 
 
       <h4 id="resumen" class="text-warning" style="margin-top: 100px;">Resumen profesional</h4>
       <p>
-        Soy un desarrollador web apasionado por crear experiencias web atractivas, responsivas y funcionales. Con la
-        experiencia que tengo logro transformar ideas y propuestas en interfaces modernas y efectivas. Mi objetivo es
-        aportar soluciones innovadoras y a la vez seguir perfeccionando mis habilidades en el desarrollo web. En el
+        Con la experiencia que tengo logro transformar ideas y propuestas en interfaces modernas y efectivas. Mi
+        objetivo es
+        aportar soluciones innovadoras y seguir perfeccionando mis habilidades en el desarrollo web. En el
         backend tengo conocimientos en Laravel y base de datos, lo que me permite colaborar en equipos
         multidisciplinarios.
       </p>
 
       <h4 id="habilidades" class="text-warning" style="margin-top: 100px;">Habilidades</h4>
       <p>
-        He adquirido una base solida a través de proyectos recientes y aprendizaje continuo, mis habilidades son las
-        siguientes :
+        He adquirido una base solida a través de proyectos recientes y aprendizaje continuo, estas son mis habilidades.
       </p>
 
       <div class="card text-center mt-4 card-skills">
@@ -351,42 +335,47 @@
               <img src="./assets/img/skills/figma.png" class="img-fluid" alt="Figma" width="40" />
               <span>Figma</span>
             </div>
+            <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+              <img src="./assets/img/skills/docker.png" class="img-fluid" alt="Figma" width="40" />
+              <span>Docker</span>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+              <img src="./assets/img/skills/jira.png" class="img-fluid" alt="Figma" width="40" />
+              <span>Jira</span>
+            </div>
 
           </div>
         </div>
       </div>
 
-      <h4 id="contacto" class="text-warning" style="margin-top: 100px;">Contacto</h4>
+      <h4 id="contacto" class="text-warning" style="margin-top: 200px;">Contacto</h4>
       <div class="mb-5 mt-4 imgcontacto">
         <div class="card formcontacto">
           <div class="row g-0">
-            <div class="col-md-4 me-5 form1">
-            </div>
             <div class="col-md-7">
               <div class="card-body">
-               
-                <p class="fst-italic mb-5">"El primer paso hacia algo increible es decir '¡Hola!'</p>
-                
+
+                <p class="fst-italic mb-5">Hablemos, Creemos !</p>
+
                 <form action="https://formspree.io/f/xjkvawke" method="POST">
-                  <div class="mb-3">
-                    <!-- <label for="exampleFormControlInput1" class="form-label">Escriba su direccion de correo</label> -->
+                  <div class="mb-3">              
                     <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
-                      placeholder="Email" autocomplete="off" required>
+                      placeholder="Correo elecrtrónico" autocomplete="off" required>
                   </div>
-                  <div class="mb-3">
-                    <!-- <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label> -->
-                    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje" autocomplete="off"  maxlength="250" required>                      
+                  <div class="mb-3">           
+                    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"
+                      placeholder="Mensaje" autocomplete="off" maxlength="250" required>
                     </textarea>
                   </div>
                   <button class="btn btn-primary" type="submit">Enviar</button>
                 </form>
 
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </section>
 
 
@@ -413,11 +402,83 @@
 
 
     window.onload = () => {
-    document.querySelector('textarea[name="message"]').value = '';
-  };
-  
+      document.querySelector('textarea[name="message"]').value = '';
+    };
+
   </script>
   <script src="script/script.js"></script>
+
+
+  <!-- Modal RJ -->
+  <div class="modal fade" id="modal-rj" tabindex="-1" aria-labelledby="modalPortafolioLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-info" id="modalPortafolioLabel">Proyecto: Retención Judicial</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/img/RJ.jpeg" class="img-fluid mb-3" alt="imagen ampliada retencion judicial">
+          <!-- <p><strong>Descripción:</strong> Proyecto realizado con Angular17</p> -->
+          <!-- <a href="https://github.com/tuusuario/portafolio" target="_blank" class="btn btn-outline-warning">Ver en GitHub</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal EE -->
+  <div class="modal fade" id="modal-ee" tabindex="-1" aria-labelledby="modalPortafolioLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-info" id="modalPortafolioLabel">Proyecto: Expediente electrónico</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/img/EE.png" class="img-fluid mb-3" alt="imagen ampliada expediente elecrtrónico">
+          <!-- <p><strong>Descripción:</strong> Proyecto realizado con Angular17</p> -->
+          <!-- <a href="https://github.com/tuusuario/portafolio" target="_blank" class="btn btn-outline-warning">Ver en GitHub</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal STICKCODE -->
+  <div class="modal fade" id="modal-stickcode" tabindex="-1" aria-labelledby="modalPortafolioLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-info" id="modalPortafolioLabel">Proyecto: StickCode</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/img/stickcode.png" class="img-fluid mb-3" alt="imagen ampliada retencion judicial">
+          <!-- <p><strong>Descripción:</strong> Proyecto realizado con ????</p> -->
+          <!-- <a href="https://github.com/tuusuario/portafolio" target="_blank" class="btn btn-outline-warning">Ver en GitHub</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal STICKCODE -->
+  <div class="modal fade" id="modal-work" tabindex="-1" aria-labelledby="modalPortafolioLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-info" id="modalPortafolioLabel">Proyecto: StickCode</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/img/stickcode.png" class="img-fluid mb-3" alt="imagen ampliada retencion judicial">
+          <!-- <p><strong>Descripción:</strong> Proyecto realizado con ????</p> -->
+          <!-- <a href="https://github.com/tuusuario/portafolio" target="_blank" class="btn btn-outline-warning">Ver en GitHub</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
 </body>
 
 </html>
